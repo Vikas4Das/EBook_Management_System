@@ -1,0 +1,20 @@
+.bg-custom {
+	background-color:#303f9f;
+}
+.navbar .nav-item:hover .nav-link {
+	color:#303f9f;
+	background-color: white;
+	border-radius: 15px;
+}
+
+.custom-btn {
+    background-color: #303f9f;
+    border: none;
+    color: #fff;
+    transition: 0.3s ease;
+  }
+
+  .custom-btn:hover {
+    background-color: #1e2a78;
+    color:white;
+  }
