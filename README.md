@@ -1,77 +1,61 @@
-# EBook Management System 📚
+# 📚 EBook Management System
 
-## Table of Contents
-
-1. [Project Overview](#project-overview)  
-2. [Features](#features)  
-3. [Architecture & Technology Stack](#architecture--technology-stack)  
-4. [Getting Started](#getting-started)  
-   - [Prerequisites](#prerequisites)  
-   - [Installation & Setup](#installation--setup)  
-   - [Running the Application](#running-the-application)  
-5. [Usage](#usage)  
-   - [User Flow / Screenshots](#user-flow--screenshots)  
-6. [Project Structure](#project-structure)  
-7. [Database Schema](#database-schema)  
-8. [Testing](#testing)  
-9. [Future Enhancements](#future-enhancements)  
-10. [Contributing](#contributing)  
-11. [License](#license)  
-12. [Contact](#contact)  
+A powerful and user-friendly **EBook Management System** built to help users **discover, read, and manage ebooks** seamlessly.  
+This project provides an interactive platform for ebook enthusiasts and administrators to **store, organize, and access digital books** efficiently.
 
 ---
 
-## Project Overview
+## 🌟 Overview
 
-The **EBook Management System** is a desktop (or web) application built in Java (or your language) intended to help users manage ebooks — upload, store metadata, search, borrow, or read.  
-It provides a structured way to catalog ebooks, manage users, and facilitate interactions with the ebook repository.
+The **EBook Management System** is a full-featured web application designed for **students, educators, and book lovers** to manage and explore eBooks digitally.  
+It allows users to upload, view, categorize, and download eBooks in an organized and intuitive way.
 
-This repository includes design documents (SRS), project PDF, source codes, and additional resources.  
-(Current repo files include `EBook SRS.docx`, `Ebook Management System .pdf`, etc.) :contentReference[oaicite:0]{index=0}
-
----
-
-## Features
-
-- Add / upload new ebooks with metadata (title, author, category, ISBN, file)  
-- Edit or remove existing ebooks  
-- Search / filter / browse ebooks by title, author, category, etc.  
-- Borrow / issue ebooks (if your system supports lending)  
-- Return or mark as available  
-- User management (admin, normal users)  
-- Possibly view / read ebooks directly (if you embed a PDF/reader)  
-- Generate reports (e.g. most borrowed, overdue books)  
+This project is developed using **Advanced Java (JSP, Servlets, JDBC)** and **MySQL** as the backend, ensuring data consistency and fast access.
 
 ---
 
-## Architecture & Technology Stack
+## 🚀 Key Features
 
-| Component | Technology / Tool |
-|----------|--------------------|
-| Programming Language | Java (or your language) |
-| UI / Frontend | Swing / JavaFX / Web UI (if applicable) |
-| Backend / Business Logic | Java classes / services |
-| Data Storage / DB | MySQL / SQLite / any relational DB |
-| ORM / JDBC | JDBC / Hibernate (if used) |
-| Build Tool | Maven / Gradle / Ant (or manual) |
-| Version Control | Git / GitHub |
+✅ **User Authentication:**  
+Secure login and registration system for both users and admins.
+
+✅ **Add / Upload EBooks:**  
+Admins can upload new eBooks with title, author, and description.
+
+✅ **View & Download EBooks:**  
+Users can easily view and download their favorite books.
+
+✅ **Search Functionality:**  
+Quick search by title, author, or category.
+
+✅ **Responsive Design:**  
+Fully responsive UI using **HTML, CSS, Bootstrap**, and **JSP pages**.
+
+✅ **Admin Dashboard:**  
+Admins can manage all books, users, and uploads efficiently.
+
+✅ **Database Integration:**  
+Connected with **MySQL database** using **JDBC** for persistent storage.
 
 ---
 
-## Getting Started
+## 🧩 Tech Stack
 
-### Prerequisites
+| Category | Technologies Used |
+|-----------|------------------|
+| **Frontend** | HTML5, CSS3, Bootstrap, JSP |
+| **Backend** | Java (Servlets, JDBC) |
+| **Database** | MySQL |
+| **Server** | Apache Tomcat |
+| **IDE** | Eclipse IDE |
+| **Version Control** | Git & GitHub |
 
-Before running the project locally, ensure you have:
+---
 
-- Java JDK (version 8 or above)  
-- Maven or build tool (if used)  
-- A relational database (MySQL, SQLite, or whichever DB you choose)  
-- (Optional) IDE like IntelliJ IDEA, Eclipse, NetBeans  
+## 🛠️ Installation & Setup Guide
 
-### Installation & Setup
+Follow the steps below to run the project on your local machine 👇
 
-1. **Clone the repository**  
-   ```bash
-   git clone https://github.com/Vikas4Das/EBook_Management_System.git
-   cd EBook_Management_System
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/Vikas4Das/EBook_Management_System.git
