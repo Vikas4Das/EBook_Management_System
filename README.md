@@ -1,129 +1,223 @@
-<div align="center">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📚 EBook Management System - Project Documentation</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
-# 📚 EBook Management System  
-### A Java-based Digital Library Management Web Application  
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  padding: 30px;
+}
+h1, h2, h3 {
+  color: #303f9f;
+  font-weight: 700;
+}
+h4, h5 {
+  color: #444;
+}
+hr {
+  border: 1px solid #ddd;
+  margin: 20px 0;
+}
+.container {
+  background: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+pre {
+  background: #222;
+  color: #0f0;
+  padding: 15px;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+table th {
+  background: #303f9f;
+  color: white;
+}
+.badge {
+  background: #303f9f;
+}
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 15px;
+  color: #777;
+}
+</style>
+</head>
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![JSP](https://img.shields.io/badge/JSP%2FServlet-007396?style=for-the-badge&logo=java&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
-![Apache Tomcat](https://img.shields.io/badge/Tomcat-FF9933?style=for-the-badge&logo=apache-tomcat&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+<body>
+<div class="container">
+  <div class="text-center mb-4">
+    <h1>📚 EBook Management System</h1>
+    <h4 class="text-muted">A Java-based Digital Library Management Web Application</h4>
+    <div class="mt-3">
+      <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white">
+      <img src="https://img.shields.io/badge/JSP%2FServlet-007396?style=for-the-badge&logo=java&logoColor=white">
+      <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white">
+      <img src="https://img.shields.io/badge/Tomcat-FF9933?style=for-the-badge&logo=apache-tomcat&logoColor=white">
+      <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white">
+    </div>
+  </div>
 
-</div>
+  <hr>
 
----
+  <h2>🧠 Project Overview</h2>
+  <p>The <strong>EBook Management System</strong> is a <strong>Java-based web application</strong> designed to allow users to buy, sell, and manage e-books online. It simplifies book transactions for both users and administrators, creating an efficient digital book management platform.</p>
+  <blockquote>This project replaces the traditional manual process with a modern, automated, and user-friendly digital system.</blockquote>
 
-## 🧠 **Project Overview**
+  <hr>
 
-The **EBook Management System** is a Java-based web application that enables users to **buy, sell, and manage e-books** efficiently.  
-It provides both **User** and **Admin** modules to handle all digital library operations online.
+  <h2>🚀 Features</h2>
+  <h4>👩‍💻 For Users:</h4>
+  <ul>
+    <li>🔐 User Registration & Login</li>
+    <li>🛒 Add to Cart and Buy Books</li>
+    <li>📦 Place Orders and View Order History</li>
+    <li>💬 Edit Profile & Change Password</li>
+    <li>💵 Sell Old Books with Image Upload</li>
+    <li>🏠 Manage Delivery Address</li>
+  </ul>
 
-> This project replaces manual book management systems with a **modern, automated, and user-friendly web platform**.
+  <h4>🧑‍💼 For Admins:</h4>
+  <ul>
+    <li>📗 Add / Edit / Delete Books</li>
+    <li>👥 Manage Users and Orders</li>
+    <li>📊 Dashboard for Reports</li>
+    <li>🧹 Maintain Database</li>
+  </ul>
 
----
+  <hr>
 
-## 🚀 **Features**
+  <h2>🧩 Tech Stack Used</h2>
+  <table>
+    <tr><th>Category</th><th>Technologies</th></tr>
+    <tr><td>Frontend</td><td>HTML5, CSS3, Bootstrap 5, JSP</td></tr>
+    <tr><td>Backend</td><td>Java (Servlets, JDBC)</td></tr>
+    <tr><td>Database</td><td>MySQL</td></tr>
+    <tr><td>Server</td><td>Apache Tomcat 9.0</td></tr>
+    <tr><td>IDE</td><td>Eclipse / IntelliJ IDEA</td></tr>
+    <tr><td>Version Control</td><td>Git & GitHub</td></tr>
+  </table>
 
-### 👩‍💻 For Users:
-- 🔐 User Registration & Login  
-- 🛒 Add to Cart and Buy Books  
-- 📦 Place Orders and Track Them  
-- 💬 Edit Profile & Change Password  
-- 💵 Sell Old Books with Image Upload  
-- 🏠 Manage Delivery Address  
+  <hr>
 
-### 🧑‍💼 For Admins:
-- 📗 Add / Edit / Delete Books  
-- 👥 Manage Users and Orders  
-- 📊 View System Overview and Reports  
-- 🧹 Clean and Manage Database  
-
----
-
-## 🧩 **Tech Stack Used**
-
-| Category | Technologies |
-|-----------|---------------|
-| **Frontend** | HTML5, CSS3, Bootstrap 5, JSP |
-| **Backend** | Java (Servlets, JDBC) |
-| **Database** | MySQL |
-| **Server** | Apache Tomcat 9.0 |
-| **IDE** | Eclipse / IntelliJ IDEA |
-| **Version Control** | Git & GitHub |
-
----
-
-## 📂 **Project Folder Structure**
-
+  <h2>📂 Project Folder Structure</h2>
+  <pre>
 EBook_Management_System/
 │
 ├── 📁 src/main/java/com/
-│   ├── 📁 DB/
-│   │   └── DBconnect.java              → Handles database connection using JDBC
-│   │
-│   ├── 📁 DAO/                         → Data Access Layer (interacts with DB)
-│   │   ├── BooksDAOImpl.java           → Book-related CRUD operations
-│   │   ├── UserDAOImpl.java            → Handles user login, registration, and profile update
-│   │   ├── CartDAOImpl.java            → Manages cart and order details
-│   │   └── OrderDAOImpl.java           → Stores and retrieves order information
-│   │
-│   ├── 📁 entity/                      → Model classes (JavaBeans)
-│   │   ├── BookDtls.java               → Book entity (name, author, price, etc.)
-│   │   ├── User.java                   → User entity (name, email, phone, etc.)
-│   │   ├── cart.java                   → Cart entity (book + user mapping)
-│   │   └── Order.java                  → Order entity (transaction details)
-│   │
-│   ├── 📁 user/servlet/                → Handles user-side requests
-│   │   ├── LoginServlet.java           → User login logic
-│   │   ├── RegisterServlet.java        → Handles new user registration
-│   │   ├── CartServlet.java            → Adds book to cart
-│   │   ├── RemoveBookCart.java         → Deletes books from cart
-│   │   ├── UpdateProfileServlet.java   → Updates user information
-│   │   ├── OrderServlet.java           → Processes user order
-│   │   └── LogoutServlet.java          → Ends user session
-│   │
-│   ├── 📁 admin/servlet/               → Admin panel backend logic
-│   │   ├── AddBooksServlet.java        → Add new books
-│   │   ├── EditBooksServlet.java       → Modify existing books
-│   │   ├── DeleteBooksServlet.java     → Remove unwanted books
-│   │   └── ManageUserServlet.java      → Handles all users and their data
+│   ├── DB/ → DBconnect.java
+│   ├── DAO/ → BooksDAOImpl, UserDAOImpl, CartDAOImpl, OrderDAOImpl
+│   ├── entity/ → BookDtls, User, Cart, Order
+│   ├── user/servlet/ → LoginServlet, RegisterServlet, CartServlet, etc.
+│   └── admin/servlet/ → AddBooksServlet, ManageUserServlet
 │
 ├── 📁 WebContent/
-│   ├── 📁 all_component/               → Reusable design components
-│   │   ├── navbar.jsp                  → Navigation bar for all pages
-│   │   ├── footer.jsp                  → Common footer
-│   │   ├── allcss.jsp                  → CSS + Bootstrap + Icons import
-│   │
-│   ├── 📁 admin/                       → Admin dashboard pages
-│   │   ├── home.jsp                    → Admin dashboard page
-│   │   ├── add_books.jsp               → Add new book form
-│   │   ├── view_books.jsp              → View all added books
-│   │   └── manage_users.jsp            → Admin view of users
-│   │
-│   ├── 📁 book/                        → Book images & uploads folder
-│   │   ├── sample_book1.jpg
-│   │   └── sample_book2.jpg
-│   │
-│   ├── 📁 user/                        → User-side JSP pages
-│   │   ├── register.jsp
-│   │   ├── login.jsp
-│   │   ├── index.jsp                   → Homepage (book listings)
-│   │   ├── cart.jsp                    → User cart page
-│   │   ├── order_success.jsp           → Order confirmation page
-│   │   ├── edit_profile.jsp            → User profile update page
-│   │   └── sell_book.jsp               → Sell old book page
-│   │
-│   ├── 📁 css/                         → Custom styles
-│   │   └── style.css
-│   │
-│   ├── 📁 images/                      → Logo and background images
-│   │   └── logo.png
-│   │
-│   ├── 404.jsp                         → Error page
-│   └── index.jsp                       → Main entry homepage
+│   ├── all_component/ → navbar.jsp, footer.jsp, allcss.jsp
+│   ├── admin/ → home.jsp, add_books.jsp, manage_users.jsp
+│   ├── book/ → image uploads
+│   ├── user/ → login.jsp, register.jsp, index.jsp, cart.jsp, sell_book.jsp
+│   ├── css/ → style.css
+│   ├── images/ → logo.png
+│   ├── 404.jsp, index.jsp
 │
-├── pom.xml                             → Maven configuration file
-├── .classpath / .project               → Eclipse project files
-├── README.md                           → Project documentation
-└── ebook.sql                           → Database schema
+├── pom.xml
+├── README.md
+└── ebook.sql
+  </pre>
 
+  <hr>
+
+  <h2>🗃️ Database Schema & Tables</h2>
+  <table>
+    <tr><th>Table Name</th><th>Description</th></tr>
+    <tr><td>user</td><td>Stores user details (name, email, password, phone)</td></tr>
+    <tr><td>book_dtls</td><td>Contains book details (title, author, category, price)</td></tr>
+    <tr><td>cart</td><td>Stores temporary cart items for users</td></tr>
+    <tr><td>orders</td><td>Stores final order and payment details</td></tr>
+  </table>
+
+  <h4>ER Diagram:</h4>
+  <pre>
+User (userId) ───┐
+                 ▼
+              Cart (cartId) ───> Book (bookId)
+                 ▼
+               Orders (orderId)
+  </pre>
+
+  <hr>
+
+  <h2>⚙️ How to Run the Project</h2>
+  <ol>
+    <li>Clone the repo:
+      <pre>git clone https://github.com/Vikas4Das/EBook_Management_System.git</pre>
+    </li>
+    <li>Open the project in <b>Eclipse IDE</b>.</li>
+    <li>Configure <b>Tomcat Server</b> and <b>MySQL Database</b>.</li>
+    <li>Import <code>ebook.sql</code> file into MySQL.</li>
+    <li>Update <code>DBconnect.java</code> with your credentials.</li>
+    <li>Run on Tomcat and visit:
+      <pre>http://localhost:8080/EBook_Management_System</pre>
+    </li>
+  </ol>
+
+  <hr>
+
+  <h2>🖼️ Screenshots</h2>
+  <div class="text-center">
+    <img src="https://via.placeholder.com/300x180?text=Home+Page" class="m-2">
+    <img src="https://via.placeholder.com/300x180?text=Admin+Dashboard" class="m-2">
+    <img src="https://via.placeholder.com/300x180?text=User+Cart" class="m-2">
+  </div>
+
+  <hr>
+
+  <h2>👨‍💻 Contributors</h2>
+  <table>
+    <tr><th>Name</th><th>GitHub</th><th>Role</th></tr>
+    <tr><td>Vikas Das</td><td><a href="https://github.com/Vikas4Das">@Vikas4Das</a></td><td>Project Lead & Full Stack Developer</td></tr>
+    <tr><td>Shrabanee Routray</td><td><a href="https://github.com/Shrabanee04">@Shrabanee04</a></td><td>UI/UX & Frontend Design</td></tr>
+    <tr><td>Vasetti Dixita</td><td><a href="https://github.com/Dixita-05">@Dixita-05</a></td><td>Database Management & Testing</td></tr>
+    <tr><td>Satyapriya Das</td><td><a href="https://github.com/Satyapriya06">@Satyapriya06</a></td><td>Backend Logic & Integration</td></tr>
+    <tr><td>Jyoti Anurag</td><td>—</td><td>Documentation & Report Preparation</td></tr>
+  </table>
+
+  <hr>
+
+  <h2>🧾 License</h2>
+  <p>This project is licensed under the <strong>MIT License</strong> – free for educational and learning use.</p>
+
+  <hr>
+
+  <h2>📞 Contact</h2>
+  <p><b>Email:</b> <a href="mailto:vikasdasofficial04@gmail.com">vikasdasofficial04@gmail.com</a><br>
+  <b>GitHub:</b> <a href="https://github.com/Vikas4Das">github.com/Vikas4Das</a><br>
+  <b>Institution:</b> Centurion University of Technology and Management, Bhubaneswar</p>
+
+  <footer>
+    ✨ <em>"Empowering digital libraries — one line of code at a time."</em> ✨
+  </footer>
+</div>
+</body>
+</html>
