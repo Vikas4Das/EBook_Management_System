@@ -55,7 +55,6 @@ It provides both **User** and **Admin** modules to handle all digital library op
 
 ## 📂 **Project Folder Structure**
 
-
 EBook_Management_System/
 │
 ├── 📁 src/main/java/com/
@@ -64,7 +63,7 @@ EBook_Management_System/
 │   │
 │   ├── 📁 DAO/                         → Data Access Layer (interacts with DB)
 │   │   ├── BooksDAOImpl.java           → Book-related CRUD operations
-│   │   ├── UserDAOImpl.java            → Handles user login, registration, profile update
+│   │   ├── UserDAOImpl.java            → Handles user login, registration, and profile update
 │   │   ├── CartDAOImpl.java            → Manages cart and order details
 │   │   └── OrderDAOImpl.java           → Stores and retrieves order information
 │   │
