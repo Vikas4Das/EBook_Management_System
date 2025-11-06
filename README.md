@@ -7,62 +7,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
-<style>
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
-  line-height: 1.6;
-  padding: 30px;
-}
-h1, h2, h3 {
-  color: #303f9f;
-  font-weight: 700;
-}
-h4, h5 {
-  color: #444;
-}
-hr {
-  border: 1px solid #ddd;
-  margin: 20px 0;
-}
-.container {
-  background: #fff;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
-}
-pre {
-  background: #222;
-  color: #0f0;
-  padding: 15px;
-  border-radius: 6px;
-  overflow-x: auto;
-}
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 15px;
-}
-table th, table td {
-  border: 1px solid #ddd;
-  padding: 10px;
-  text-align: left;
-}
-table th {
-  background: #303f9f;
-  color: white;
-}
-.badge {
-  background: #303f9f;
-}
-footer {
-  text-align: center;
-  margin-top: 50px;
-  font-size: 15px;
-  color: #777;
-}
-</style>
+
 </head>
 
 <body>
