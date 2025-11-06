@@ -1,40 +1,61 @@
 package com.admin.servlet;
 
 import java.io.IOException;
-
+import java.sql.Connection;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-
+import javax.servlet.http.*;
 import com.DAO.BooksDAOImpl;
 import com.DB.DBconnect;
+import com.entity.BookDtls;
 
-@WebServlet("/delete")
-public class BooksDeleteServlet extends HttpServlet {
+@WebServlet("/addbooks")
+@MultipartConfig
+public class BooksAdd extends HttpServlet {
 
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
-            throws ServletException, IOException {
-        try {
-            int id = Integer.parseInt(req.getParameter("id"));
-            BooksDAOImpl dao = new BooksDAOImpl(DBconnect.getConn());
-            boolean f = dao.deleteBooks(id);
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-            HttpSession session = req.getSession();
+		try {
+			String bookName = req.getParameter("bname");
+			String author = req.getParameter("author");
+			String price = req.getParameter("price");
+			String categories = req.getParameter("btype");
+			String status = req.getParameter("bstatus");
+			Part part = req.getPart("bimg");
+			String fileName = part.getSubmittedFileName();
 
-            if (f) {
-                session.setAttribute("succMsg", "Book Deleted Successfully!");
-            } else {
-                session.setAttribute("failedMsg", "Something went wrong on the server!");
-            }
+			// Save uploaded file
+			String uploadPath = getServletContext().getRealPath("") + "book";
+			part.write(uploadPath + java.io.File.separator + fileName);
+			// Create book object
+			BookDtls b = new BookDtls(bookName, author, price, categories, status, fileName, "admin");
 
-            resp.sendRedirect("admin/allbooks.jsp");
+			Connection conn = DBconnect.getConn();
+			if (conn == null) {
+				throw new ServletException("Database connection failed!");
+			}
 
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
+			BooksDAOImpl dao = new BooksDAOImpl(conn);
+
+			boolean f = dao.addBooks(b);
+
+			HttpSession session = req.getSession();
+
+			if (f) {
+
+				session.setAttribute("succMsg", "✅ Book added successfully!");
+			} else {
+				session.setAttribute("failedMsg", "⚠️ Something went wrong on the server.");
+			}
+			resp.sendRedirect("admin/addbooks.jsp");
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			HttpSession session = req.getSession();
+			session.setAttribute("failedMsg", "❌ Error: " + e.getMessage());
+			resp.sendRedirect("admin/addbooks.jsp");
+		}
+	}
 }
