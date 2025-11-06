@@ -54,3 +54,77 @@ It provides both **User** and **Admin** modules to handle all digital library op
 ---
 
 ## 📂 **Project Folder Structure**
+
+
+EBook_Management_System/
+│
+├── 📁 src/main/java/com/
+│   ├── 📁 DB/
+│   │   └── DBconnect.java              → Handles database connection using JDBC
+│   │
+│   ├── 📁 DAO/                         → Data Access Layer (interacts with DB)
+│   │   ├── BooksDAOImpl.java           → Book-related CRUD operations
+│   │   ├── UserDAOImpl.java            → Handles user login, registration, profile update
+│   │   ├── CartDAOImpl.java            → Manages cart and order details
+│   │   └── OrderDAOImpl.java           → Stores and retrieves order information
+│   │
+│   ├── 📁 entity/                      → Model classes (JavaBeans)
+│   │   ├── BookDtls.java               → Book entity (name, author, price, etc.)
+│   │   ├── User.java                   → User entity (name, email, phone, etc.)
+│   │   ├── cart.java                   → Cart entity (book + user mapping)
+│   │   └── Order.java                  → Order entity (transaction details)
+│   │
+│   ├── 📁 user/servlet/                → Handles user-side requests
+│   │   ├── LoginServlet.java           → User login logic
+│   │   ├── RegisterServlet.java        → Handles new user registration
+│   │   ├── CartServlet.java            → Adds book to cart
+│   │   ├── RemoveBookCart.java         → Deletes books from cart
+│   │   ├── UpdateProfileServlet.java   → Updates user information
+│   │   ├── OrderServlet.java           → Processes user order
+│   │   └── LogoutServlet.java          → Ends user session
+│   │
+│   ├── 📁 admin/servlet/               → Admin panel backend logic
+│   │   ├── AddBooksServlet.java        → Add new books
+│   │   ├── EditBooksServlet.java       → Modify existing books
+│   │   ├── DeleteBooksServlet.java     → Remove unwanted books
+│   │   └── ManageUserServlet.java      → Handles all users and their data
+│
+├── 📁 WebContent/
+│   ├── 📁 all_component/               → Reusable design components
+│   │   ├── navbar.jsp                  → Navigation bar for all pages
+│   │   ├── footer.jsp                  → Common footer
+│   │   ├── allcss.jsp                  → CSS + Bootstrap + Icons import
+│   │
+│   ├── 📁 admin/                       → Admin dashboard pages
+│   │   ├── home.jsp                    → Admin dashboard page
+│   │   ├── add_books.jsp               → Add new book form
+│   │   ├── view_books.jsp              → View all added books
+│   │   └── manage_users.jsp            → Admin view of users
+│   │
+│   ├── 📁 book/                        → Book images & uploads folder
+│   │   ├── sample_book1.jpg
+│   │   └── sample_book2.jpg
+│   │
+│   ├── 📁 user/                        → User-side JSP pages
+│   │   ├── register.jsp
+│   │   ├── login.jsp
+│   │   ├── index.jsp                   → Homepage (book listings)
+│   │   ├── cart.jsp                    → User cart page
+│   │   ├── order_success.jsp           → Order confirmation page
+│   │   ├── edit_profile.jsp            → User profile update page
+│   │   └── sell_book.jsp               → Sell old book page
+│   │
+│   ├── 📁 css/                         → Custom styles
+│   │   └── style.css
+│   │
+│   ├── 📁 images/                      → Logo and background images
+│   │   └── logo.png
+│   │
+│   ├── 404.jsp                         → Error page
+│   └── index.jsp                       → Main entry homepage
+│
+├── pom.xml                             → Maven configuration file
+├── .classpath / .project               → Eclipse project files
+├── README.md                           → Project documentation
+└── ebook.sql                           → Database schema
+
